@@ -1,29 +1,37 @@
 {
-  "name": "961explore-frontend",
-  "version": "0.1.0",
+  "name": "961explore",
   "private": true,
-"scripts": {
-  "dev": "next dev",
-"build": "next build",
-
-  "start": "next start"
-},
-
+  "version": "1.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy"
+  },
+  "keywords": [
+    "sanity"
+  ],
   "dependencies": {
-    "@portabletext/react": "^3.2.1",
-    "@sanity/client": "^7.8.0",
-    "next": "15.4.2",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "@sanity/vision": "^4.0.1",
+    "react": "^19.1",
+    "react-dom": "^19.1",
+    "sanity": "^4.0.1",
+    "styled-components": "^6.1.18"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.4.2",
-    "tailwindcss": "^4"
+    "@sanity/eslint-config-studio": "^5.0.2",
+    "@types/react": "^19.1",
+    "eslint": "^9.28",
+    "prettier": "^3.5",
+    "typescript": "^5.8"
   },
-  "engines": {
-    "node": "22.17.0"
+  "prettier": {
+    "semi": false,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true
   }
 }

@@ -1,0 +1,1 @@
+import{defineConfig as t,renderStudio as e}from"sanity";import{structureTool as o}from"sanity/structure";import{visionTool as i}from"@sanity/vision";const r=[],s=t({name:"default",title:"961explore",projectId:"v3dmdzg4",dataset:"production",plugins:[o(),i()],schema:{types:r}});e(document.getElementById("sanity"),s,{reactStrictMode:!1,basePath:"/"});
